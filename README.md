@@ -25,7 +25,7 @@ This repo is composed of the next libraries :
 
 ## App directory
 
-Included in an Ignite boilerplate project is the App directory. This is a directory you would normally have to create when using vanilla React Native.
+Included in an Ignite boilerplate project is the App directory. This is a directory you would normally have to create when using vanilla React.
 
 The inside of the App directory looks similar to the following:
 
@@ -52,10 +52,10 @@ App
 "Dumb" components are stored here. All data is passed into dumb components. These components are often used inside a "Container Component". Container components are described in more detail further on.
 
 **Components ── Styles**
-We separate component styles from component functionality. Use this folder to create and store style files that match the naming of your components. For example, a component `AlertMessage.js` would have a matching styles file called `AlertMessageStyles.js`.
+We separate component styles from component functionality. Use this folder to create and store style files that match the naming of your components.
 
 **Config**
-All application specific configuration falls in this folder. For example, `DebugSettings.js` is used for development-wide globals and `ReactotronConfig.js` is used for Reactotron client settings.
+All application specific configuration falls in this folder.
 
 **Containers**
 A container is what they call a "Smart Component" in Redux. It is a component
@@ -63,7 +63,7 @@ which knows about Redux. They are usually used as "Screens".
 
 Also located here are two special containers: `App.js` and `RootContainer.js`.
 
-`App.js` is first component loaded after `index.js`. The purpose of this file is to setup Redux or any other non-visual "global" modules. Having Redux setup here helps with the hot-reloading process in React Native during development as it won't try to reload your sagas and reducers should your colors change (for example).
+`App.js` is first component loaded after `index.js`. The purpose of this file is to setup Redux or any other non-visual "global" modules. Having Redux setup here helps with the hot-reloading process in React during development as it won't try to reload your sagas and reducers should your colors change (for example).
 
 `RootContainer.js` is the first visual component in the app. It is the ancestor of all other screens and components.
 
